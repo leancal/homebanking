@@ -74,6 +74,8 @@ const app = Vue.createApp({
     },
 
     downloadPDF() {
+      let dateFrom = new Date(this.dateFrom).toISOString;
+      let dateTo = new Date(this.dateTo).toISOString;
       axios.post('/api/transactions/pdf',
         `dateFrom=${this.dateFrom}&dateTo=${this.dateTo}&accountNumber=${this.accountNumber}`,
         { headers: { "content-type": "application/x-www-form-urlencoded" } }
