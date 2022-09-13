@@ -1,0 +1,493 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+  --color-primary: #7380ec;
+  --color-danger: #ff7782;
+  --color-success: #41f1b6;
+  --color-white: #fff;
+  --color-info-dark: #7d8da1;
+  --color-info-light: #dce1eb;
+  --color-dark: #363949;
+  --color-light: rgba(132, 139, 200, 0.18);
+  --color-background: #f6f6f9;
+
+  --body-color: #f8f9fa;
+  --sidebar-color: #e5e6e9;
+  --primary-color: #695cfe;
+  --primary-color-light: #f6f5ff;
+  --toggle-color: #ddd;
+  --text-color: #707070;
+
+  /* ====== TRANSITIONS ====== */
+  --tran-03: all 0.3s ease;
+
+  --card-border-radius: 2rem;
+  --border-radius-1: 0.4rem;
+  --border-radius-3: 1.2rem;
+
+  --card-padding: 1.8rem;
+
+  --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+/*======DARK THEME VARIABLES======*/
+body.dark {
+  --body-color: #18191a;
+  --sidebar-color: #242526;
+  --primary-color: #3a3b3c;
+  --primary-color-light: #3a3b3c;
+  --toggle-color: #fff;
+  --text-color: #ccc;
+}
+/*======BUTTONS======*/
+
+.btn {
+  border-radius: 4px;
+  font-size: 13px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 30px;
+  border: none;
+  letter-spacing: 0.02rem;
+  -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  position: relative;
+  top: 0;
+}
+
+/*======GENERAL======*/
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  appearance: none;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+/*======LOAN INFO=====*/
+.loanInfo {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 33% 33% 33%;
+}
+.loanInfo1 {
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: space-between;
+  text-align: center;
+}
+.loanInfo2 {
+  display: flex;
+  justify-content:center;
+}
+.loanInfo2 img {
+  width: 100%;
+}
+.loanInfo3 {
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: space-between;
+  text-align: center;
+}
+.loanInfo1  > div, 
+.loanInfo3 > div{
+  background: var(--color-white);
+  padding: var(--card-padding);
+  border-radius: var(--card-border-radius);
+  margin-top: 1rem;
+  box-shadow: var(--box-shadow);
+}
+/*=====LOAN CONTACT=====*/
+.loanContact {
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
+  justify-items: center;
+}
+.loanContact > div {
+  text-align: center;
+  background: var(--color-white);
+  padding: 60px;
+  border-radius: var(--card-border-radius);
+  margin-top: 1rem;
+  box-shadow: var(--box-shadow);
+}
+.loanContact > div p{
+  font-size: 16px;
+  margin: 0px;
+}
+.loanContact > div a{
+  font-size: 18px;
+  margin: 0px -3px 10px 3px;
+
+  color: var(--color-primary);
+}
+.loanContact1{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/*======BODY DARK======*/
+
+body.dark .profile p {
+  color: var(--color-info-light);
+}
+body.dark .top a span {
+  color: var(--color-info-light);
+}
+body.dark .textMuted {
+  color: var(--color-info-light);
+}
+body.dark .sidebar header .toggle {
+  color: var(--text-color);
+}
+body.dark .sidebar li a:hover .icon,
+body.dark .sidebar li a:hover .text {
+  color: var(--text-color);
+}
+body.dark .mode .sun-moon i.sun {
+  opacity: 1;
+}
+body.dark .mode .sun-moon i.moon {
+  opacity: 0;
+}
+body.dark .switch::before {
+  left: 20px;
+}
+body.dark .home .text {
+  color: var(--text-color);
+}
+body.dark .home .textTable {
+  color: white;
+}
+body.dark .navbar {
+  background-color: var(--sidebar-color);
+}
+body.dark .date {
+  background-color: var(--color-info-light);
+}
+body.dark .insights .sales {
+  background-color: var(--sidebar-color);
+  color: var(--color-info-light);
+}
+body.dark .btn {
+  background-color: var(--color-info-light);
+}
+body.dark .income {
+  background-color: var(--sidebar-color);
+  color: var(--color-info-light);
+}
+body.dark main .img-pay {
+  background-color: var(--sidebar-color);
+  color: var(--color-info-light);
+}
+body.dark .right .recent-updates {
+  color: var(--color-info-light);
+}
+body.dark .right .recent-updates .updates {
+  background-color: var(--sidebar-color);
+  color: var(--color-info-light);
+}
+body.dark .item {
+  background-color: var(--sidebar-color);
+  color: var(--color-info-light);
+}
+body.dark .news {
+  color: var(--color-info-light);
+}
+
+/*======MEDIA QUERIES======*/
+
+
+@media screen and (max-width: 1024px) {
+  
+  .loanInfo {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 33% 33% 33%;
+  }
+  .loanInfo1 {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-between;
+    text-align: center;
+  }
+  .loanInfo2 {
+    display: flex;
+    justify-content:center;
+  }
+  /* .sidebar.close ~ .home {
+    left: 78px;
+    width: calc(100% - 78px);
+  } */
+  .sidebar.close ~  .home .loanInfo2 img {
+    margin-top: 0px;
+    width: 100%;
+    height: 100%;
+  }
+  .loanInfo2 img {
+    margin-top: 76px;
+    width: 96%;
+    height: 60%;
+  }
+  .loanInfo3 {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-between;
+    text-align: center;
+  }
+  .loanInfo1  > div, 
+  .loanInfo3 > div{
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+  }
+  
+  .loanContact {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 84%;
+    justify-items: center;
+    justify-content: center;
+}
+  .loanContact > div {
+    text-align: center;
+    background: var(--color-white);
+    padding:  72px 19px;
+    border-radius: var(--card-border-radius);
+    margin: 2rem 8px;
+    box-shadow: var(--box-shadow);
+  }
+  .loanContact > div p{
+    font-size: 12px;
+    margin: 0px;
+  }
+  .loanContact > div a{
+    font-size: 14px;
+    margin: 0px -3px 10px 3px;
+  
+    color: var(--color-primary);
+  }
+  .loanContact1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 768px) {
+  .loanInfo {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 33% 33% 33%;
+  }
+  .loanInfo1 {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-between;
+    text-align: center;
+  }
+  .loanInfo2 {
+    display: flex;
+    justify-content:center;
+  }
+  
+  .sidebar.close ~  .home .loanInfo2 img {
+    margin-top: 62px;
+    width: 103%;
+    height: 66%;
+  }
+  .loanInfo2 img {
+    margin-top: 145px;
+    width: 99%;
+    height: 42%;
+  }
+  .loanInfo3 {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-between;
+    text-align: center;
+  }
+  .loanInfo1  > div, 
+  .loanInfo3 > div{
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+  }
+  .loanInfo1  > div p, 
+  .loanInfo3 > div p{
+    font-size: 11px;
+  }
+  .loanInfo1  > div h2, 
+  .loanInfo3 > div h2{
+    font-size: 13px;
+  }
+  
+  
+  .loanContact {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 84%;
+    justify-items: center;
+    justify-content: center;
+}
+  .loanContact > div {
+    text-align: center;
+    background: var(--color-white);
+    padding:  72px 19px;
+    border-radius: var(--card-border-radius);
+    margin: 2rem 8px;
+    box-shadow: var(--box-shadow);
+  }
+  .loanContact > div p{
+    font-size: 12px;
+    margin: 0px;
+  }
+  .loanContact > div a{
+    font-size: 14px;
+    margin: 0px -3px 10px 3px;
+  
+    color: var(--color-primary);
+  }
+  .loanContact1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  
+  
+  
+}
+@media screen and (max-width: 425px) {
+  .loanInfo {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 33% 33% 33%;
+  }
+  .loanInfo1 {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-between;
+    text-align: center;
+  }
+  .loanInfo2 {
+    display: flex;
+    justify-content:center;
+  }
+  
+  .sidebar.close ~ .home .loanInfo2 img {
+    margin-top: 144px;
+    width: 100%;
+    height: 34%;
+}
+  .loanInfo2 img {
+    margin-top: 144px;
+    width: 100%;
+    height: 34%;
+  }
+  .loanInfo3 {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-between;
+    text-align: center;
+  }
+  .loanInfo1  > div, 
+  .loanInfo3 > div{
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+  }
+  .loanInfo1  > div p, 
+  .loanInfo3 > div p{
+    font-size: 11px;
+  }
+  .loanInfo1  > div h2, 
+  .loanInfo3 > div h2{
+    font-size: 13px;
+  }
+  
+  
+  .loanContact {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 85%;
+    justify-items: center;
+    justify-content: center;
+}
+  .loanContact > div {
+    text-align: center;
+    background: var(--color-white);
+    padding:  72px 19px;
+    border-radius: var(--card-border-radius);
+    margin: 2rem 8px;
+    box-shadow: var(--box-shadow);
+  }
+  .loanContact > div p{
+    font-size: 11px;
+    margin: 0px;
+  }
+  .loanContact > div a{
+    font-size: 14px;
+    margin: 0px -3px 10px 3px;
+  
+    color: var(--color-primary);
+  }
+  .loanContact1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .loanContact1 span {
+    display: none;
+  }
+  
+}
+
+@media screen and (max-width: 375px) {
+  .sidebar.close ~ .home {
+    left: 16px;
+    width: calc(133% - 141px);
+  }
+  .home {
+    overflow-x: hidden;
+    width: calc(172% - 264px);
+    background-color: var(--body-color);
+    left: 0px;
+  }
+  .sidebar.close ~ .home .bodies {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: -14px 19px 0px -35px;
+  }
+  .bodies {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: -20px -1px -12px 74px;
+  }
+}

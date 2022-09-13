@@ -1,0 +1,1092 @@
+.cardCards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+  justify-content: center;
+}
+.card.card-has-bg {
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  background-size: 120%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.card.card-has-bg:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.card.card-has-bg:hover {
+  transform: scale(0.98);
+  box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.3);
+  background-size: 130%;
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.card.card-has-bg:hover .card-img-overlay {
+  transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+  background: #234f6d;
+  background: linear-gradient(0deg, rgba(4, 69, 114, 0.5) 0%, #044572 100%);
+}
+.card .card-footer {
+  background: none;
+  border-top: none;
+}
+
+.dcard{
+  display:flex;
+}
+.card .card-meta {
+  color: #26bd75;
+}
+.card .card-body {
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  flex: 0.8;
+}
+.card:hover {
+  cursor: pointer;
+  transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.card:hover .card-body {
+  margin-top: 30px;
+  transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.card .card-img-overlay {
+  transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+  background: #234f6d;
+  background: linear-gradient(
+    0deg,
+    rgba(35, 79, 109, 0.3785889356) 0%,
+    #455f71 100%
+  );
+}
+.media-body p {
+  font-size: 18px;
+}
+
+.card {
+  width: 450px;
+  -webkit-perspective: 600px;
+  -moz-perspective: 600px;
+  perspective: 600px;
+  border: 1px transparent solid;
+  background-color: transparent;
+  border: none;
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  overflow: hidden;
+  border-radius: 20px;
+  min-height: 550px;
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+}
+.card__partGold {
+  box-shadow: 1px 1px #aaa3a300;
+  top: 0;
+  position: absolute;
+  z-index: 1000;
+  left: 4.5rem;
+  top: 3rem;
+  display: inline-block;
+  width: 320px;
+  height: 190px;
+  background: rgb(212, 175, 55);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 8px;
+
+  -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+}
+.card_partSilver {
+  box-shadow: 1px 1px #aaa3a3;
+  top: 0;
+  position: absolute;
+  z-index: 1000;
+  left: 4.5rem;
+  top: 3rem;
+  display: inline-block;
+  width: 320px;
+  height: 190px;
+  background: rgb(170, 169, 173);
+  background: linear-gradient(
+    90deg,
+    rgba(170, 169, 173, 1) 0%,
+    rgba(170, 169, 173, 1) 40%,
+    rgba(170, 169, 173, 1) 56%,
+    rgba(112, 112, 112, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 8px;
+
+  -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+}
+.card_partTitanium {
+  box-shadow: 1px 1px #aaa3a3;
+  top: 0;
+  position: absolute;
+  z-index: 1000;
+  left: 4.5rem;
+  top: 3rem;
+  display: inline-block;
+  width: 320px;
+  height: 190px;
+  background: rgb(205, 215, 225);
+  background: linear-gradient(
+    360deg,
+    rgba(205, 215, 225, 1) 24%,
+    rgba(177, 193, 208, 1) 44%,
+    rgba(238, 242, 245, 1) 80%,
+    rgba(247, 248, 252, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 8px;
+
+  -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+}
+.card__front {
+  padding: 18px;
+  -webkit-transform: rotateY(0);
+  -moz-transform: rotateY(0);
+}
+.card__back {
+  padding: 18px 0;
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+}
+.card__black-line {
+  margin-top: 5px;
+  height: 38px;
+  background-color: #3f1d1d;
+}
+.card__logo {
+  height: 30px;
+  width: 30px;
+}
+.card__logo1 {
+  height: 15px;
+  width: 37px;
+}
+.card__front-logo {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+}
+.card__square {
+  border-radius: 5px;
+  height: 30px;
+  width: 100px;
+}
+.card_numer {
+  display: block;
+  width: 100%;
+  word-spacing: 4px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: #fff;
+
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.card__space-75 {
+  width: 75%;
+  float: left;
+}
+.card__space-25 {
+  width: 25%;
+  float: left;
+}
+.card__label {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 1px;
+}
+.card__info {
+  margin-bottom: 0;
+  margin-top: 5px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #fff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.card__back-content {
+  padding: 15px 15px 0;
+}
+.card__secret--last {
+  color: #303030;
+  text-align: right;
+  margin: 0;
+  font-size: 14px;
+}
+.card__secret {
+  padding: 5px 12px;
+  background-color: #fff;
+  position: relative;
+}
+.card__secret:before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  height: calc(100% + 6px);
+  width: calc(100% - 42px);
+  border-radius: 4px;
+  background: repeating-linear-gradient(
+    45deg,
+    #ededed,
+    #ededed 5px,
+    #f9f9f9 5px,
+    #f9f9f9 10px
+  );
+}
+.card__back-logo {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+.card__back-square {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+.card:hover .card__front {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+}
+.card:hover .card__back {
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+}
+
+@media screen and (max-width: 1440px) {
+  .cardCards {
+    display: flow-root;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1144px;
+    padding: 0 1rem;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .bodies {
+    margin: 0;
+  }
+  .sidebar.close ~ .home .cardCards {
+    display: flow-root;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 890px;
+    padding: 0 1rem;
+    justify-content: center;
+  }
+  .sidebar.close ~ .home .card__square {
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+  }
+  .sidebar.close ~ .home.card_numer {
+    display: block;
+    width: 100%;
+    word-spacing: 4px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #fff;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.card_numer {
+  display: block;
+  width: 100%;
+  word-spacing: 1px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: #fff;
+  margin-bottom: 11px;
+  margin-top: 16px;
+}
+  .cardCards {
+    display: flow-root;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 812px;
+    padding: 0 1rem;
+    justify-content: center;
+  }
+  .card__square {
+    border-radius: 4px;
+    height: 15px;
+    width: 66px;
+  }
+  .sidebar.close ~ .home .card {
+    width: 450px;
+    -webkit-perspective: 600px;
+    -moz-perspective: 600px;
+    perspective: 600px;
+    border: 1px transparent solid;
+    background-color: transparent;
+    border: none;
+    transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+    overflow: hidden;
+    border-radius: 20px;
+    min-height: 400px;
+  }
+  .card {
+    width: 423px;
+    -webkit-perspective: 600px;
+    -moz-perspective: 600px;
+    perspective: 600px;
+    border: 1px transparent solid;
+    background-color: transparent;
+    border: none;
+    transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+    overflow: hidden;
+    border-radius: 20px;
+    min-height: 400px;
+  }
+  .card__info {
+    margin-bottom: -5px;
+    margin-top: -2px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #fff;
+    /* letter-spacing: 1px; */
+    text-transform: uppercase;
+  }
+  .card .card-footer {
+    background: none;
+    border-top: none;
+    margin: 15px 1px -55px 1px;
+  }
+  .media-body p {
+    font-size: 14px;
+  }
+
+  .sidebar.close ~ .home .card_partSilver {
+    box-shadow: 1px 1px #aaa3a3;
+    top: 0;
+    position: absolute;
+    z-index: 1000;
+    left: 6.5rem;
+    top: 3rem;
+    display: inline-block;
+    width: 260px;
+    height: 156px;
+    background: rgb(205, 215, 225);
+    background: linear-gradient(
+      360deg,
+      rgba(205, 215, 225, 1) 24%,
+      rgba(177, 193, 208, 1) 44%,
+      rgba(238, 242, 245, 1) 80%,
+      rgba(247, 248, 252, 1) 100%
+    );
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+  }
+  .sidebar.close ~ .home .card__partGold {
+    box-shadow: 1px 1px #aaa3a300;
+    top: 0;
+    position: absolute;
+    z-index: 1000;
+    left: 6.5rem;
+    top: 3rem;
+    display: inline-block;
+    width: 260px;
+    height: 156px;
+    background: rgb(212, 175, 55);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+  }
+  .sidebar.close ~ .home .card_partTitanium {
+    box-shadow: 1px 1px #aaa3a3;
+    top: 0;
+    position: absolute;
+    z-index: 1000;
+    left: 6.5rem;
+    top: 3rem;
+    display: inline-block;
+    width: 260px;
+    height: 156px;
+    background: rgb(205, 215, 225);
+    background: linear-gradient(
+      360deg,
+      rgba(205, 215, 225, 1) 24%,
+      rgba(177, 193, 208, 1) 44%,
+      rgba(238, 242, 245, 1) 80%,
+      rgba(247, 248, 252, 1) 100%
+    );
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+  }
+
+  .card_partTitanium {
+    box-shadow: 1px 1px #aaa3a3;
+    top: 0;
+    position: absolute;
+    z-index: 1000;
+    left: 6.5rem;
+    top: 3rem;
+    display: inline-block;
+    width: 240px;
+    height: 136px;
+    background: rgb(205, 215, 225);
+    background: linear-gradient(
+      360deg,
+      rgba(205, 215, 225, 1) 24%,
+      rgba(177, 193, 208, 1) 44%,
+      rgba(238, 242, 245, 1) 80%,
+      rgba(247, 248, 252, 1) 100%
+    );
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+  }
+  .card__partGold {
+    box-shadow: 1px 1px #aaa3a300;
+    top: 0;
+    position: absolute;
+    z-index: 1000;
+    left: 6.5rem;
+    top: 3rem;
+    display: inline-block;
+    width: 240px;
+    height: 136px;
+    background: rgb(212, 175, 55);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+  }
+  .card_partSilver {
+    box-shadow: 1px 1px #aaa3a3;
+    top: 0;
+    position: absolute;
+    z-index: 1000;
+    left: 6.5rem;
+    top: 3rem;
+    display: inline-block;
+    width: 240px;
+    height: 136px;
+    background: rgb(205, 215, 225);
+    background: linear-gradient(
+      360deg,
+      rgba(205, 215, 225, 1) 24%,
+      rgba(177, 193, 208, 1) 44%,
+      rgba(238, 242, 245, 1) 80%,
+      rgba(247, 248, 252, 1) 100%
+    );
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 397px;
+    /* min-height: 350px; */
+  }
+  .home .bodies {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 48px 1px 74px 1px;
+    flex-direction: column;
+  }
+  .bodies {
+    margin: 0;
+  }
+  .dcard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  .sidebar.close ~ .home .cardCards {
+    display: flow-root;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 890px;
+    padding: 0 1rem;
+    justify-content: center;
+  }
+  .sidebar.close ~ .home .card__square {
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+  }
+  .sidebar.close ~ .home.card_numer {
+    display: block;
+    width: 100%;
+    word-spacing: 4px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #fff;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.sidebar.close ~ .home .delete {
+  left: 307px;
+}
+.delete {
+  left: 261px;
+}
+.sidebar.close ~ .home .newcard {
+  left: 296px;
+}
+.newcard {
+  left: 251px;
+}
+.card_numer {
+  display: block;
+  width: 100%;
+  word-spacing: 1px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: #fff;
+  margin-bottom: 11px;
+  margin-top: 16px;
+}
+  .cardCards {
+    display: flow-root;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 812px;
+    padding: 0 1rem;
+    justify-content: center;
+  }
+  .card__square {
+    border-radius: 4px;
+    height: 15px;
+    width: 66px;
+  }
+  .sidebar.close ~ .home .card {
+    width: 450px;
+    -webkit-perspective: 600px;
+    -moz-perspective: 600px;
+    perspective: 600px;
+    border: 1px transparent solid;
+    background-color: transparent;
+    border: none;
+    transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+    overflow: hidden;
+    border-radius: 20px;
+    min-height: 400px;
+  }
+  .card {
+    width: 423px;
+    -webkit-perspective: 600px;
+    -moz-perspective: 600px;
+    perspective: 600px;
+    border: 1px transparent solid;
+    background-color: transparent;
+    border: none;
+    transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+    overflow: hidden;
+    border-radius: 20px;
+    min-height: 400px;
+  }
+  .card__info {
+    margin-bottom: -5px;
+    margin-top: -2px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #fff;
+    /* letter-spacing: 1px; */
+    text-transform: uppercase;
+  }
+  .card .card-footer {
+    background: none;
+    border-top: none;
+    margin: 15px 1px -55px 1px;
+  }
+  .media-body p {
+    font-size: 14px;
+  }
+
+  .sidebar.close ~ .home .card_partSilver {
+    box-shadow: 1px 1px #aaa3a3;
+    top: 0;
+    position: absolute;
+    z-index: 1000;
+    left: 6.5rem;
+    top: 3rem;
+    display: inline-block;
+    width: 260px;
+    height: 156px;
+    background: rgb(205, 215, 225);
+    background: linear-gradient(
+      360deg,
+      rgba(205, 215, 225, 1) 24%,
+      rgba(177, 193, 208, 1) 44%,
+      rgba(238, 242, 245, 1) 80%,
+      rgba(247, 248, 252, 1) 100%
+    );
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+  }
+  .sidebar.close ~ .home .card__partGold {
+    box-shadow: 1px 1px #aaa3a300;
+    top: 0;
+    position: absolute;
+    z-index: 1000;
+    left: 6.5rem;
+    top: 3rem;
+    display: inline-block;
+    width: 260px;
+    height: 156px;
+    background: rgb(212, 175, 55);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+  }
+  .sidebar.close ~ .home .card_partTitanium {
+    box-shadow: 1px 1px #aaa3a3;
+    top: 0;
+    position: absolute;
+    z-index: 1000;
+    left: 6.5rem;
+    top: 3rem;
+    display: inline-block;
+    width: 260px;
+    height: 156px;
+    background: rgb(205, 215, 225);
+    background: linear-gradient(
+      360deg,
+      rgba(205, 215, 225, 1) 24%,
+      rgba(177, 193, 208, 1) 44%,
+      rgba(238, 242, 245, 1) 80%,
+      rgba(247, 248, 252, 1) 100%
+    );
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+  }
+
+  .card_partTitanium {
+    box-shadow: 1px 1px #aaa3a3;
+    top: 0;
+    position: absolute;
+    z-index: 1000;
+    left: 6.5rem;
+    top: 3rem;
+    display: inline-block;
+    width: 240px;
+    height: 136px;
+    background: rgb(205, 215, 225);
+    background: linear-gradient(
+      360deg,
+      rgba(205, 215, 225, 1) 24%,
+      rgba(177, 193, 208, 1) 44%,
+      rgba(238, 242, 245, 1) 80%,
+      rgba(247, 248, 252, 1) 100%
+    );
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+  }
+  .card__partGold {
+    box-shadow: 1px 1px #aaa3a300;
+    top: 0;
+    position: absolute;
+    z-index: 1000;
+    left: 6.5rem;
+    top: 3rem;
+    display: inline-block;
+    width: 240px;
+    height: 136px;
+    background: rgb(212, 175, 55);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+  }
+  .card_partSilver {
+    box-shadow: 1px 1px #aaa3a3;
+    top: 0;
+    position: absolute;
+    z-index: 1000;
+    left: 6.5rem;
+    top: 3rem;
+    display: inline-block;
+    width: 240px;
+    height: 136px;
+    background: rgb(205, 215, 225);
+    background: linear-gradient(
+      360deg,
+      rgba(205, 215, 225, 1) 24%,
+      rgba(177, 193, 208, 1) 44%,
+      rgba(238, 242, 245, 1) 80%,
+      rgba(247, 248, 252, 1) 100%
+    );
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+  }
+}
+@media (max-width: 425px) {
+  
+  .sidebar.close ~ .home .card_partSilver {
+    box-shadow: 1px 1px #aaa3a3;
+    top: 0;
+    position: absolute;
+    z-index: 1000;
+    left: 1.5rem;
+    top: 3rem;
+    display: inline-block;
+    width: 260px;
+    height: 156px;
+    background: rgb(205, 215, 225);
+    background: linear-gradient(
+      360deg,
+      rgba(205, 215, 225, 1) 24%,
+      rgba(177, 193, 208, 1) 44%,
+      rgba(238, 242, 245, 1) 80%,
+      rgba(247, 248, 252, 1) 100%
+    );
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+  }
+  .sidebar.close ~ .home .card__partGold {
+    box-shadow: 1px 1px #aaa3a300;
+    top: 0;
+    position: absolute;
+    z-index: 1000;
+    left: 1.5rem;
+    top: 3rem;
+    display: inline-block;
+    width: 260px;
+    height: 156px;
+    background: rgb(212, 175, 55);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    
+  }
+  .sidebar.close ~ .home .card_partTitanium {
+    box-shadow: 1px 1px #aaa3a3;
+    top: 0;
+    position: absolute;
+    z-index: 1000;
+    left: 1.5rem;
+    top: 3rem;
+    display: inline-block;
+    width: 260px;
+    height: 156px;
+    background: rgb(205, 215, 225);
+    background: linear-gradient(
+      360deg,
+      rgba(205, 215, 225, 1) 24%,
+      rgba(177, 193, 208, 1) 44%,
+      rgba(238, 242, 245, 1) 80%,
+      rgba(247, 248, 252, 1) 100%
+    );
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+  }
+
+  .card_partTitanium {
+    box-shadow: 1px 1px #aaa3a3;
+    top: 0;
+    position: absolute;
+    z-index: 1000;
+    left: 1.5rem;
+    top: 3rem;
+    display: inline-block;
+    width: 240px;
+    height: 136px;
+    background: rgb(205, 215, 225);
+    background: linear-gradient(
+      360deg,
+      rgba(205, 215, 225, 1) 24%,
+      rgba(177, 193, 208, 1) 44%,
+      rgba(238, 242, 245, 1) 80%,
+      rgba(247, 248, 252, 1) 100%
+    );
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+  }
+  .card__partGold {
+    box-shadow: 1px 1px #aaa3a300;
+    top: 0;
+    position: absolute;
+    z-index: 1000;
+    left: 1.5rem;
+    top: 3rem;
+    display: inline-block;
+    width: 240px;
+    height: 136px;
+    background: rgb(212, 175, 55);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+  }
+  .card_partSilver {
+    box-shadow: 1px 1px #aaa3a3;
+    top: 0;
+    position: absolute;
+    z-index: 1000;
+    left: 1.5rem;
+    top: 3rem;
+    display: inline-block;
+    width: 240px;
+    height: 136px;
+    background: rgb(205, 215, 225);
+    background: linear-gradient(
+      360deg,
+      rgba(205, 215, 225, 1) 24%,
+      rgba(177, 193, 208, 1) 44%,
+      rgba(238, 242, 245, 1) 80%,
+      rgba(247, 248, 252, 1) 100%
+    );
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+  }
+  .sidebar.close ~ .home .card {
+    width: 306px;
+    -webkit-perspective: 600px;
+    -moz-perspective: 600px;
+    perspective: 600px;
+    border: 1px transparent solid;
+    background-color: transparent;
+    border: none;
+    transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+    overflow: hidden;
+    border-radius: 20px;
+    min-height: 400px;
+  }
+  .card {
+    width: 284px;
+    -webkit-perspective: 600px;
+    -moz-perspective: 600px;
+    perspective: 600px;
+    border: 1px transparent solid;
+    background-color: transparent;
+    border: none;
+    transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+    overflow: hidden;
+    border-radius: 20px;
+    min-height: 400px;
+  }
+}

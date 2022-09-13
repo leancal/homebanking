@@ -1,0 +1,1111 @@
+footer {
+  display: flex;
+  height: 186px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  justify-content: center;
+}
+.cards {
+  width: 437px;
+  -webkit-perspective: 600px;
+  -moz-perspective: 600px;
+  perspective: 600px;
+  border: 1px transparent solid;
+  background-color: transparent;
+  border: none;
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  background-color: transparent;
+  overflow: hidden;
+  border-radius: 20px;
+  min-height: 365px;
+}
+.home {
+  position: absolute;
+  top: -1px;
+  bottom: 2px;
+  /* top: 0; */
+  left: 250px;
+  width: calc(100% - 250px);
+  background-color: var(--body-color);
+  transition: var(--tran-03);
+}
+@media screen and (max-width: 1440px) {
+  footer {
+    display: flex;
+    height: 201px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    justify-content: center;
+  }
+  .sidebar.close ~ .home {
+    position: absolute;
+    top: -1px;
+    bottom: 2px;
+    /* top: 0; */
+    left: 84px;
+    width: calc(112% - 250px);
+    background-color: var(--body-color);
+    transition: var(--tran-03);
+}
+.home {
+    position: absolute;
+    top: -1px;
+    bottom: 2px;
+    /* top: 0; */
+    left: 250px;
+    width: calc(100% - 250px);
+    background-color: var(--body-color);
+    transition: var(--tran-03);
+  }
+  .cards {
+    width: 402px;
+    -webkit-perspective: 600px;
+    -moz-perspective: 600px;
+    perspective: 600px;
+    border: 1px transparent solid;
+    background-color: transparent;
+    border: none;
+    transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+    background-color: transparent;
+    overflow: hidden;
+    border-radius: 20px;
+    min-height: 365px;
+}
+}
+@media screen and (max-width: 1024px) {
+    footer {
+      display: flex;
+      height: 201px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      justify-content: center;
+    }
+    .sidebar.close ~ .home {
+        position: absolute;
+        top: -1px;
+        bottom: 2px;
+        /* top: 0; */
+        left: 84px;
+        width: calc(120% - 290px);
+        background-color: var(--body-color);
+        transition: var(--tran-03);
+    }
+  .home {
+      position: absolute;
+      top: -1px;
+      bottom: 2px;
+      /* top: 0; */
+      left: 250px;
+      width: calc(100% - 250px);
+      background-color: var(--body-color);
+      transition: var(--tran-03);
+    }
+    .sidebar.close ~ .home .cards{
+        width: 305px;
+        -webkit-perspective: 600px;
+        -moz-perspective: 600px;
+        perspective: 600px;
+        border: 1px transparent solid;
+        background-color: transparent;
+        border: none;
+        transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+        background-color: transparent;
+        overflow: hidden;
+        border-radius: 20px;
+        min-height: 365px;
+    }
+    .cards {
+        width: 244px;
+        -webkit-perspective: 600px;
+        -moz-perspective: 600px;
+        perspective: 600px;
+        border: 1px transparent solid;
+        background-color: transparent;
+        border: none;
+        transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+        background-color: transparent;
+        overflow: hidden;
+        border-radius: 20px;
+        min-height: 365px;
+    }
+    .sidebar.close ~ .home .card_partSilver {
+        box-shadow: 1px 1px #aaa3a3;
+        top: 0;
+        position: absolute;
+        z-index: 1000;
+        left: 2.5rem;
+        top: 3rem;
+        display: inline-block;
+        width: 260px;
+        height: 156px;
+        background: rgb(205, 215, 225);
+        background: linear-gradient( 360deg, rgba(205, 215, 225, 1) 24%, rgba(177, 193, 208, 1) 44%, rgba(238, 242, 245, 1) 80%, rgba(247, 248, 252, 1) 100% );
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 8px;
+        -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+    }
+    .sidebar.close ~ .home .card__partGold {
+        box-shadow: 1px 1px #aaa3a300;
+        top: 0;
+        position: absolute;
+        z-index: 1000;
+        left: 2.5rem;
+        top: 3rem;
+        display: inline-block;
+        width: 260px;
+        height: 156px;
+        background: rgb(212, 175, 55);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 8px;
+        -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+    }
+    .sidebar.close ~ .home .card_partTitanium {
+        box-shadow: 1px 1px #aaa3a3;
+        top: 0;
+        position: absolute;
+        z-index: 1000;
+        left: 2.5rem;
+        top: 3rem;
+        display: inline-block;
+        width: 260px;
+        height: 156px;
+        background: rgb(205, 215, 225);
+        background: linear-gradient( 360deg, rgba(205, 215, 225, 1) 24%, rgba(177, 193, 208, 1) 44%, rgba(238, 242, 245, 1) 80%, rgba(247, 248, 252, 1) 100% );
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 8px;
+        -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .home p{
+        font-size: 10px;
+    }
+    .home h2, .home h4{
+        font-size: 15px;
+    }
+    .home button{
+        font-size: 10px;
+    }
+    footer {
+      display: flex;
+      height: 150px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      justify-content: center;
+    }
+    .sidebar.close ~ .home {
+        position: absolute;
+        top: -1px;
+        bottom: 2px;
+        /* top: 0; */
+        left: 21px;
+        width: calc(135% - 290px);
+        background-color: var(--body-color);
+        transition: var(--tran-03);
+    }
+    .home {
+        position: absolute;
+        top: -1px;
+        bottom: 2px;
+        /* top: 0; */
+        left: 148px;
+        width: calc(113% - 250px);
+        background-color: var(--body-color);
+        transition: var(--tran-03);
+    }
+    .sidebar.close ~ .home .cards{
+        width: 305px;
+        -webkit-perspective: 600px;
+        -moz-perspective: 600px;
+        perspective: 600px;
+        border: 1px transparent solid;
+        background-color: transparent;
+        border: none;
+        transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+        background-color: transparent;
+        overflow: hidden;
+        border-radius: 20px;
+        min-height: 365px;
+    }
+    .cards {
+        width: 244px;
+        -webkit-perspective: 600px;
+        -moz-perspective: 600px;
+        perspective: 600px;
+        border: 1px transparent solid;
+        background-color: transparent;
+        border: none;
+        transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+        background-color: transparent;
+        overflow: hidden;
+        border-radius: 20px;
+        min-height: 365px;
+    }
+    .sidebar.close ~ .home .card_partSilver {
+        box-shadow: 1px 1px #aaa3a3;
+        top: 0;
+        position: absolute;
+        z-index: 1000;
+        left: 0.5rem;
+        top: 3rem;
+        display: inline-block;
+        width: 175px;
+        height: 112px;
+        background: rgb(205, 215, 225);
+        background: linear-gradient( 360deg, rgba(205, 215, 225, 1) 24%, rgba(177, 193, 208, 1) 44%, rgba(238, 242, 245, 1) 80%, rgba(247, 248, 252, 1) 100% );
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 8px;
+        -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+    }
+    .card_partSilver {
+        box-shadow: 1px 1px #aaa3a3;
+        top: 0;
+        position: absolute;
+        z-index: 1000;
+        left: 0.5rem;
+        top: 3rem;
+        display: inline-block;
+        width: 175px;
+        height: 112px;
+        background: rgb(205, 215, 225);
+        background: linear-gradient( 360deg, rgba(205, 215, 225, 1) 24%, rgba(177, 193, 208, 1) 44%, rgba(238, 242, 245, 1) 80%, rgba(247, 248, 252, 1) 100% );
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 8px;
+        -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+    }
+    .sidebar.close ~ .home .card__partGold {
+        box-shadow: 1px 1px #aaa3a300;
+        top: 0;
+        position: absolute;
+        z-index: 1000;
+        left: 0.5rem;
+        top: 3rem;
+        display: inline-block;
+        width: 175px;
+        height: 112px;
+        background: rgb(212, 175, 55);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 8px;
+        -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+    }
+    .card__partGold {
+        box-shadow: 1px 1px #aaa3a300;
+        top: 0;
+        position: absolute;
+        z-index: 1000;
+        left: 0.5rem;
+        top: 3rem;
+        display: inline-block;
+        width: 175px;
+        height: 112px;
+        background: rgb(212, 175, 55);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 8px;
+        -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+    }
+    .sidebar.close ~ .home .card_partTitanium {
+        box-shadow: 1px 1px #aaa3a3;
+        top: 0;
+        position: absolute;
+        z-index: 1000;
+        left: 0.5rem;
+        top: 3rem;
+        display: inline-block;
+        width: 175px;
+        height: 112px;
+        background: rgb(205, 215, 225);
+        background: linear-gradient( 360deg, rgba(205, 215, 225, 1) 24%, rgba(177, 193, 208, 1) 44%, rgba(238, 242, 245, 1) 80%, rgba(247, 248, 252, 1) 100% );
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 8px;
+        -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+    }
+    .card_partTitanium {
+        box-shadow: 1px 1px #aaa3a3;
+        top: 0;
+        position: absolute;
+        z-index: 1000;
+        left: 0.5rem;
+        top: 3rem;
+        display: inline-block;
+        width: 175px;
+        height: 112px;
+        background: rgb(205, 215, 225);
+        background: linear-gradient( 360deg, rgba(205, 215, 225, 1) 24%, rgba(177, 193, 208, 1) 44%, rgba(238, 242, 245, 1) 80%, rgba(247, 248, 252, 1) 100% );
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 8px;
+        -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+    }
+    .accordion-body{
+        display: none;
+    }
+    
+  }
+  @media screen and (max-width: 425px) {
+    .home p{
+        font-size: 10px;
+    }
+    .home h2, .home h4{
+        font-size: 15px;
+    }
+    .home button{
+        font-size: 10px;
+    }
+    footer {
+      display: none
+    }
+    .sidebar.close ~ .home {
+        position: absolute;
+        top: -1px;
+        bottom: 2px;
+        /* top: 0; */
+        left: 21px;
+        width: calc(163% - 290px);
+        background-color: var(--body-color);
+        transition: var(--tran-03);
+    }
+    .home {
+        position: absolute;
+        top: -1px;
+        bottom: 2px;
+        /* top: 0; */
+        left: 148px;
+        width: calc(124% - 250px);
+        background-color: var(--body-color);
+        transition: var(--tran-03);
+    }
+    .columns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sidebar.close ~ .home .cards{
+        width: 305px;
+        -webkit-perspective: 600px;
+        -moz-perspective: 600px;
+        perspective: 600px;
+        border: 1px transparent solid;
+        background-color: transparent;
+        border: none;
+        transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+        background-color: transparent;
+        overflow: hidden;
+        border-radius: 20px;
+        min-height: 365px;
+    }
+    .cards {
+        width: 244px;
+        -webkit-perspective: 600px;
+        -moz-perspective: 600px;
+        perspective: 600px;
+        border: 1px transparent solid;
+        background-color: transparent;
+        border: none;
+        transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+        background-color: transparent;
+        overflow: hidden;
+        border-radius: 20px;
+        min-height: 365px;
+    }
+    .sidebar.close ~ .home .card_partSilver {
+        box-shadow: 1px 1px #aaa3a3;
+        top: 0;
+        position: absolute;
+        z-index: 1000;
+        left: 4.5rem;
+        top: 3rem;
+        display: inline-block;
+        width: 175px;
+        height: 112px;
+        background: rgb(205, 215, 225);
+        background: linear-gradient( 360deg, rgba(205, 215, 225, 1) 24%, rgba(177, 193, 208, 1) 44%, rgba(238, 242, 245, 1) 80%, rgba(247, 248, 252, 1) 100% );
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 8px;
+        -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+    }
+    .card_partSilver {
+        box-shadow: 1px 1px #aaa3a3;
+        top: 0;
+        position: absolute;
+        z-index: 1000;
+        left: 4.5rem;
+        top: 3rem;
+        display: inline-block;
+        width: 175px;
+        height: 112px;
+        background: rgb(205, 215, 225);
+        background: linear-gradient( 360deg, rgba(205, 215, 225, 1) 24%, rgba(177, 193, 208, 1) 44%, rgba(238, 242, 245, 1) 80%, rgba(247, 248, 252, 1) 100% );
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 8px;
+        -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+    }
+    .sidebar.close ~ .home .card__partGold {
+        box-shadow: 1px 1px #aaa3a300;
+        top: 0;
+        position: absolute;
+        z-index: 1000;
+        left: 4.5rem;
+        top: 3rem;
+        display: inline-block;
+        width: 175px;
+        height: 112px;
+        background: rgb(212, 175, 55);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 8px;
+        -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+    }
+    .card__partGold {
+        box-shadow: 1px 1px #aaa3a300;
+        top: 0;
+        position: absolute;
+        z-index: 1000;
+        left: 4.5rem;
+        top: 3rem;
+        display: inline-block;
+        width: 175px;
+        height: 112px;
+        background: rgb(212, 175, 55);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 8px;
+        -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+    }
+    .sidebar.close ~ .home .card_partTitanium {
+        box-shadow: 1px 1px #aaa3a3;
+        top: 0;
+        position: absolute;
+        z-index: 1000;
+        left: 4.5rem;
+        top: 3rem;
+        display: inline-block;
+        width: 175px;
+        height: 112px;
+        background: rgb(205, 215, 225);
+        background: linear-gradient( 360deg, rgba(205, 215, 225, 1) 24%, rgba(177, 193, 208, 1) 44%, rgba(238, 242, 245, 1) 80%, rgba(247, 248, 252, 1) 100% );
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 8px;
+        -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+    }
+    .card_partTitanium {
+        box-shadow: 1px 1px #aaa3a3;
+        top: 0;
+        position: absolute;
+        z-index: 1000;
+        left: 4.5rem;
+        top: 3rem;
+        display: inline-block;
+        width: 175px;
+        height: 112px;
+        background: rgb(205, 215, 225);
+        background: linear-gradient( 360deg, rgba(205, 215, 225, 1) 24%, rgba(177, 193, 208, 1) 44%, rgba(238, 242, 245, 1) 80%, rgba(247, 248, 252, 1) 100% );
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 8px;
+        -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+    }
+    .accordion-body{
+        display: none;
+    }
+    
+  }
+  @media screen and (max-width: 375px) {
+    .home p{
+        font-size: 10px;
+    }
+    .home h2, .home h4{
+        font-size: 15px;
+    }
+    .home button{
+        font-size: 10px;
+    }
+    footer {
+      display: none
+    }
+    .sidebar.close ~ .home {
+        position: absolute;
+        top: -1px;
+        bottom: 2px;
+        /* top: 0; */
+        left: 21px;
+        width: calc(172% - 290px);
+        background-color: var(--body-color);
+        transition: var(--tran-03);
+    }
+    .home {
+        position: absolute;
+        top: -1px;
+        bottom: 2px;
+        /* top: 0; */
+        left: 148px;
+        width: calc(127% - 250px);
+        background-color: var(--body-color);
+        transition: var(--tran-03);
+    }
+    .columns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sidebar.close ~ .home .cards{
+        width: 305px;
+        -webkit-perspective: 600px;
+        -moz-perspective: 600px;
+        perspective: 600px;
+        border: 1px transparent solid;
+        background-color: transparent;
+        border: none;
+        transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+        background-color: transparent;
+        overflow: hidden;
+        border-radius: 20px;
+        min-height: 365px;
+    }
+    .cards {
+        width: 244px;
+        -webkit-perspective: 600px;
+        -moz-perspective: 600px;
+        perspective: 600px;
+        border: 1px transparent solid;
+        background-color: transparent;
+        border: none;
+        transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+        background-color: transparent;
+        overflow: hidden;
+        border-radius: 20px;
+        min-height: 365px;
+    }
+    .sidebar.close ~ .home .card_partSilver {
+        box-shadow: 1px 1px #aaa3a3;
+        top: 0;
+        position: absolute;
+        z-index: 1000;
+        left: 4.5rem;
+        top: 3rem;
+        display: inline-block;
+        width: 175px;
+        height: 112px;
+        background: rgb(205, 215, 225);
+        background: linear-gradient( 360deg, rgba(205, 215, 225, 1) 24%, rgba(177, 193, 208, 1) 44%, rgba(238, 242, 245, 1) 80%, rgba(247, 248, 252, 1) 100% );
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 8px;
+        -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+    }
+    .card_partSilver {
+        box-shadow: 1px 1px #aaa3a3;
+        top: 0;
+        position: absolute;
+        z-index: 1000;
+        left: 4.5rem;
+        top: 3rem;
+        display: inline-block;
+        width: 175px;
+        height: 112px;
+        background: rgb(205, 215, 225);
+        background: linear-gradient( 360deg, rgba(205, 215, 225, 1) 24%, rgba(177, 193, 208, 1) 44%, rgba(238, 242, 245, 1) 80%, rgba(247, 248, 252, 1) 100% );
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 8px;
+        -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+    }
+    .sidebar.close ~ .home .card__partGold {
+        box-shadow: 1px 1px #aaa3a300;
+        top: 0;
+        position: absolute;
+        z-index: 1000;
+        left: 4.5rem;
+        top: 3rem;
+        display: inline-block;
+        width: 175px;
+        height: 112px;
+        background: rgb(212, 175, 55);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 8px;
+        -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+    }
+    .card__partGold {
+        box-shadow: 1px 1px #aaa3a300;
+        top: 0;
+        position: absolute;
+        z-index: 1000;
+        left: 4.5rem;
+        top: 3rem;
+        display: inline-block;
+        width: 175px;
+        height: 112px;
+        background: rgb(212, 175, 55);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 8px;
+        -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+    }
+    .sidebar.close ~ .home .card_partTitanium {
+        box-shadow: 1px 1px #aaa3a3;
+        top: 0;
+        position: absolute;
+        z-index: 1000;
+        left: 4.5rem;
+        top: 3rem;
+        display: inline-block;
+        width: 175px;
+        height: 112px;
+        background: rgb(205, 215, 225);
+        background: linear-gradient( 360deg, rgba(205, 215, 225, 1) 24%, rgba(177, 193, 208, 1) 44%, rgba(238, 242, 245, 1) 80%, rgba(247, 248, 252, 1) 100% );
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 8px;
+        -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+    }
+    .card_partTitanium {
+        box-shadow: 1px 1px #aaa3a3;
+        top: 0;
+        position: absolute;
+        z-index: 1000;
+        left: 4.5rem;
+        top: 3rem;
+        display: inline-block;
+        width: 175px;
+        height: 112px;
+        background: rgb(205, 215, 225);
+        background: linear-gradient( 360deg, rgba(205, 215, 225, 1) 24%, rgba(177, 193, 208, 1) 44%, rgba(238, 242, 245, 1) 80%, rgba(247, 248, 252, 1) 100% );
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 8px;
+        -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+    }
+    .accordion-body{
+        display: none;
+    }
+    
+  }
+  @media screen and (max-width: 320px) {
+    .home p{
+        font-size: 10px;
+    }
+    .home h2, .home h4{
+        font-size: 15px;
+    }
+    .home button{
+        font-size: 10px;
+    }
+    footer {
+      display: none
+    }
+    .sidebar.close ~ .home {
+        position: absolute;
+        top: -1px;
+        bottom: 2px;
+        /* top: 0; */
+        left: 21px;
+        width: calc(184% - 290px);
+        background-color: var(--body-color);
+        transition: var(--tran-03);
+    }
+    .home {
+        position: absolute;
+        top: -1px;
+        bottom: 2px;
+        /* top: 0; */
+        left: 148px;
+        width: calc(132% - 250px);
+        background-color: var(--body-color);
+        transition: var(--tran-03);
+    }
+    .columns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sidebar.close ~ .home .cards{
+        width: 305px;
+        -webkit-perspective: 600px;
+        -moz-perspective: 600px;
+        perspective: 600px;
+        border: 1px transparent solid;
+        background-color: transparent;
+        border: none;
+        transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+        background-color: transparent;
+        overflow: hidden;
+        border-radius: 20px;
+        min-height: 365px;
+    }
+    .cards {
+        width: 244px;
+        -webkit-perspective: 600px;
+        -moz-perspective: 600px;
+        perspective: 600px;
+        border: 1px transparent solid;
+        background-color: transparent;
+        border: none;
+        transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+        background-color: transparent;
+        overflow: hidden;
+        border-radius: 20px;
+        min-height: 365px;
+    }
+    .sidebar.close ~ .home .card_partSilver {
+        box-shadow: 1px 1px #aaa3a3;
+        top: 0;
+        position: absolute;
+        z-index: 1000;
+        left: 4.5rem;
+        top: 3rem;
+        display: inline-block;
+        width: 175px;
+        height: 112px;
+        background: rgb(205, 215, 225);
+        background: linear-gradient( 360deg, rgba(205, 215, 225, 1) 24%, rgba(177, 193, 208, 1) 44%, rgba(238, 242, 245, 1) 80%, rgba(247, 248, 252, 1) 100% );
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 8px;
+        -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+    }
+    .card_partSilver {
+        box-shadow: 1px 1px #aaa3a3;
+        top: 0;
+        position: absolute;
+        z-index: 1000;
+        left: 4.5rem;
+        top: 3rem;
+        display: inline-block;
+        width: 175px;
+        height: 112px;
+        background: rgb(205, 215, 225);
+        background: linear-gradient( 360deg, rgba(205, 215, 225, 1) 24%, rgba(177, 193, 208, 1) 44%, rgba(238, 242, 245, 1) 80%, rgba(247, 248, 252, 1) 100% );
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 8px;
+        -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+    }
+    .sidebar.close ~ .home .card__partGold {
+        box-shadow: 1px 1px #aaa3a300;
+        top: 0;
+        position: absolute;
+        z-index: 1000;
+        left: 4.5rem;
+        top: 3rem;
+        display: inline-block;
+        width: 175px;
+        height: 112px;
+        background: rgb(212, 175, 55);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 8px;
+        -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+    }
+    .card__partGold {
+        box-shadow: 1px 1px #aaa3a300;
+        top: 0;
+        position: absolute;
+        z-index: 1000;
+        left: 4.5rem;
+        top: 3rem;
+        display: inline-block;
+        width: 175px;
+        height: 112px;
+        background: rgb(212, 175, 55);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 8px;
+        -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+    }
+    .sidebar.close ~ .home .card_partTitanium {
+        box-shadow: 1px 1px #aaa3a3;
+        top: 0;
+        position: absolute;
+        z-index: 1000;
+        left: 4.5rem;
+        top: 3rem;
+        display: inline-block;
+        width: 175px;
+        height: 112px;
+        background: rgb(205, 215, 225);
+        background: linear-gradient( 360deg, rgba(205, 215, 225, 1) 24%, rgba(177, 193, 208, 1) 44%, rgba(238, 242, 245, 1) 80%, rgba(247, 248, 252, 1) 100% );
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 8px;
+        -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+    }
+    .card_partTitanium {
+        box-shadow: 1px 1px #aaa3a3;
+        top: 0;
+        position: absolute;
+        z-index: 1000;
+        left: 4.5rem;
+        top: 3rem;
+        display: inline-block;
+        width: 175px;
+        height: 112px;
+        background: rgb(205, 215, 225);
+        background: linear-gradient( 360deg, rgba(205, 215, 225, 1) 24%, rgba(177, 193, 208, 1) 44%, rgba(238, 242, 245, 1) 80%, rgba(247, 248, 252, 1) 100% );
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 8px;
+        -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+    }
+    .accordion-body{
+        display: none;
+    }
+    
+  }

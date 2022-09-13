@@ -1,0 +1,129 @@
+
+.bodies {
+    display: flow-root;
+    margin: 48px;
+    
+}
+footer {
+    display: flex;
+    height: 167px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    justify-content: center;
+}
+summary {
+  background-color: #fff;
+  position: relative;
+  cursor: pointer;
+  padding: 1em 0.5em;
+  list-style: none;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+summary:hover {
+  background-color: #f2f5f9;
+}
+summary div {
+  display: flex;
+  align-items: center;
+}
+summary h3 {
+  display: flex;
+  flex-direction: column;
+}
+summary small {
+  color: #999;
+  font-size: 0.875em;
+}
+summary strong {
+  font-weight: 700;
+}
+summary span:first-child {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 10px;
+  background-color: #f3e1e1;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.25em;
+}
+summary span:first-child svg {
+  width: 2.25rem;
+  height: 2.25rem;
+}
+summary span:last-child {
+  font-weight: 700;
+  margin-left: auto;
+}
+summary:focus {
+  outline: none;
+}
+summary .plus {
+  color: #289672;
+}
+
+details {
+  border-bottom: 1px solid #b5bfd9;
+}
+details[open] {
+  box-shadow: -3px 0 0 #b5bfd9;
+}
+details:first-of-type {
+  border-top: 1px solid #b5bfd9;
+}
+details > div {
+  padding: 2em 2em 0;
+  font-size: 0.875em;
+}
+
+dl {
+  display: flex;
+  flex-wrap: wrap;
+}
+dl dt {
+  font-weight: 700;
+}
+dl div {
+  margin-right: 4em;
+  margin-bottom: 2em;
+}
+@media screen and (max-width: 375px) {
+  .sidebar.close ~ .home {
+    left: 9px;
+    width: calc(141% - 149px);
+}
+.home {
+  overflow-x: hidden;
+  width: calc(166% - 264px);
+  background-color: var(--body-color);
+}
+}
+@media screen and (max-width: 325px) {
+  .sidebar.close ~ .home {
+    left: 9px;
+    width: calc(144% - 149px);
+}
+.home {
+  overflow-x: hidden;
+  width: calc(178% - 264px);
+  background-color: var(--body-color);
+}
+footer {
+  display: flex;
+  height: 227px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  justify-content: center;
+}
+.footer a {
+  padding: 0px 4px 0px 7px;
+  font-size: 10px;
+  color: white;
+}
+}
+  
