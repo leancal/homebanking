@@ -285,15 +285,10 @@
                 <div class="modal-body">
                   <h3>Select between dates</h3>
                   <div class="mb-3">
-                    <input type="date" class="form-control date"  v-model="dateFrom">
-                    <input type="date" class="form-control date" v-model="dateTo">
+                    <input type="datetime-local" class="form-control date"  v-model="dateFrom">
+                    <input type="datetime-local" class="form-control date" v-model="dateTo">
                     <h3>Select the account</h3>
-                    <div class="mb-3">
-                      <select v-model="accountNumber" class="form-select" aria-label="Default select example">
-                        <option v-for="account in accounts" :value="account.number">ACCOUNT
-                          NUMBER:{{account.number}} </option>
-                      </select>
-                    </div>
+                    
                     </select>
                   </div>
                 </div>

@@ -20,7 +20,7 @@ public class WebAuthorization extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
 
         http.authorizeRequests()
-                .antMatchers("/web/index.html", "/web/js/**", "/web/styles/**", "/web/assets/**", "/api/clients/current",  "/api/clients", "/api/clients/current/accounts", "/api/clients/current/cards", "/api/transactions", "/api/loans","/api/clients/current/loans","/api/clients/current/accounts","/api/clients/current/cards/state","/api/clients/current/accounts/accountState","/api/admin/loans").permitAll()
+                .antMatchers("/web/index.html", "/web/js/**", "/web/styles/**", "/web/assets/**", "/api/clients/current",  "/api/clients", "/api/clients/current/accounts", "/api/clients/current/cards", "/api/transactions", "/api/loans","/api/clients/current/loans","/api/clients/current/accounts","/api/clients/current/cards/state","/api/clients/current/accounts/accountState","/api/admin/loans","/api/transactions/pdf").permitAll()
                 .antMatchers(HttpMethod.POST, "/api/clients","/api/loans","/api/clients/current/loans","/api/transactions/pdf","/api/clients/current/accounts","/api/clients/current/transactions/payments").permitAll()
                 .antMatchers(HttpMethod.POST, "/api/clients/current/accounts", "/api/clients/current/cards","/api/loans").hasAnyAuthority("CLIENT", "ADMIN")
                 .antMatchers("/rest/**", "/api/**", "/manager.html", "/clients/currents","/api/admin/loans").hasAuthority("ADMIN")

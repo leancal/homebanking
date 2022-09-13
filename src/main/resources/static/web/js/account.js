@@ -54,8 +54,9 @@ const app = Vue.createApp({
 
         this.transaction = this.accountsId.transactions;
         console.log(this.transaction);
-        this.dateFrom = new Date(this.accountData.creationDate);
-        this.dateTo = new Date();
+        this.accountNumber=this.accountsId.number;
+        
+        newPdf();
       })
       .catch(function (error) {
         console.log(error);
@@ -74,13 +75,15 @@ const app = Vue.createApp({
     },
 
     downloadPDF() {
-      let dateFrom = new Date(this.dateFrom).toISOString;
-      let dateTo = new Date(this.dateTo).toISOString;
-      axios.post('/api/transactions/pdf',
-        `dateFrom=${this.dateFrom}&dateTo=${this.dateTo}&accountNumber=${this.accountNumber}`,
-        { headers: { "content-type": "application/x-www-form-urlencoded" } }
+      axios.post('/api/transactions/pdf',{
+      "dateFrom":this.dateFrom,
+      "dateTo":this.dateTo,
+      "accountNumber":this.accountNumber,                
+  } 
+        
       )
       .then(response => console.log('pdf downloaded!!!'))
+      .catch(error => console.log(error))
     },
 
     
