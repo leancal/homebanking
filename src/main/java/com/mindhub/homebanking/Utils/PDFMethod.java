@@ -20,7 +20,7 @@ public class PDFMethod {
         var doc = new Document();
         String route = System.getProperty("user.home");
         PdfWriter.getInstance(doc, new FileOutputStream("Your-transactions.pdf"));
-        PdfWriter.getInstance(doc, new FileOutputStream(route + "/Downloads/TransactionInfo.pdf"));
+        PdfWriter.getInstance(doc, new FileOutputStream(route + "./Downloads/TransactionInfo.pdf"));
         doc.open();
 
         var bold = new Font(Font.FontFamily.TIMES_ROMAN, 12, Font.BOLD);
